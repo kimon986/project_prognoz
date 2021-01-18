@@ -1,0 +1,252 @@
+/***OVERALL***/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', 'Helvetica Neue', sans-serif;
+}
+
+
+/***HEADER***/
+h1 {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 800;
+    background-image: linear-gradient(to right, rgb(26, 136, 226), rgb(191, 12, 211));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 25px 35px;
+    width: fit-content;
+}
+
+header > nav > ul {
+    list-style-type: none;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+header > nav > ul > li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+header > nav > ul > li > button {
+    font-size: 15px;
+    padding: 7px 20px;
+    text-decoration: none;
+    color: #000;
+    opacity: 0.7;
+    transition: 0.4s;
+    background-color:rgb(238, 229, 229);
+    border-width: 1px;
+    border-color:rgb(138, 135, 135);
+}
+
+
+header > nav > ul > li > button:hover {
+    opacity: 1;
+}
+
+
+/***MAIN ARTICLE***/
+
+main > article {
+    padding: 25px 35px;
+    width: 60%;
+}
+
+main > article > h2 {
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+main > article > h2 > span {
+    font-size: 18px;
+}
+
+main > article > p {
+    margin-bottom: 15px;
+    word-spacing: 1px;
+    padding: 2px;
+    line-height: 2em;
+}
+
+/***IMG***/
+
+.img-box {
+    display: grid;
+    height: 100%;
+}
+
+.window-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 15px 0 15px 0;
+}
+
+/***ASIDE***/
+
+aside {
+    float: right;
+    width: 25%;
+    margin-top: 2%;
+}
+
+aside > h3 {
+    padding-bottom: 15px;
+}
+
+aside > ul {
+    list-style-type: square;
+    color: rgb(57, 137, 228);
+}
+
+aside > ul > li {
+    margin-bottom: 8px;
+    font-size: 25px;
+}
+
+aside > ul > li > span {
+    font-size: 15px;
+}
+
+/***HELPER LINKS SECTION***/
+
+.helper-links {
+    padding-left: 35px;
+}
+
+.helper-links button {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(57, 137, 228);
+    opacity: 0.7;
+}
+
+.helper-links button:hover {
+    color: rgb(231, 12, 220);
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.helper-links p {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.helper-links > div {
+    width: 55%;
+}
+
+/***FOOTER***/
+
+footer {
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(128, 128, 128, 0.253);
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+}
+
+footer > ul {
+    list-style-type: none;
+    color: rgb(57, 137, 228);
+}
+
+footer > ul > li {
+    margin-bottom: 5px;
+}
+
+/***SHOW MORE JS***/
+
+.moreText {
+    display: none;
+}
+
+.read-more-btn {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.text.show-more .moreText {
+    display: block;
+    margin-top: 1.5em;
+    width: 100%;
+    line-height: 2em;
+
+}
+
+/***ABOUT THE TEAM PHOTOS***/
+
+.profile-pics img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    border-radius: 10%;
+}
+
+.profile-pics p {
+    margin-bottom: 15px;
+    word-spacing: 1px;
+    padding: 2px;
+    line-height: 2em;
+}
+
+/***FORM***/
+
+main > article > form {
+    margin-top: 40px;
+}
+
+main > article > form > label {
+    font-size: 17px;
+}
+
+input[type=text], select {
+    font-size: 15px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 30%;
+    background-color:rgb(26, 136, 226);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+  }
+
+  input[type=email] {
+      width: 100%;
+      padding: 12px 20px;
+      font-size: 15px;
+      margin: 8px 0;
+      display: inline-block;
+      box-sizing: border-box;
+  }
+  
+  input[type=submit]:hover {
+    background-color:rgb(191, 12, 211);
+    transition: 0.4s;
+  }
+
+ 
