@@ -1,11 +1,15 @@
 /***OVERALL***/
-* {
+* { /* TODO: try do not use * selector because it less productive */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', 'Helvetica Neue', sans-serif;
 }
 
+/* TODO: when we have only desktop design, try page limited in size  */
+body {
+    min-width: 900px;
+}
 
 /***HEADER***/
 h1 {
@@ -42,6 +46,7 @@ header > nav > ul > li > button {
     background-color:rgb(238, 229, 229);
     border-width: 1px;
     border-color:rgb(138, 135, 135);
+    cursor:pointer; /*TODO: fixed*/
 }
 
 
